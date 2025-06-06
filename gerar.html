@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Imagens</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/responsivo.css">
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="menu">☰</button>
+            <ul>
+                <li><a class="nav-link" href="index.html"><strong>Início</strong></a></li>
+                <li><a class="nav-link" href="gerar.html"><strong>Gerar</strong></a></li>
+                <li><a class="nav-link" href="galeria.html"><strong>Galeria</strong></a></li>
+                <li><a class="nav-link" href="contato.html"><strong>Contato</strong></a></li>
+                <li><a class="nav-link" href="sobre.html"><strong>Sobre</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteiner">
+        <section>
+            <h1>Gerador de Imagens</h1>
+            <p>Dê vida às suas ideias com palavras. Quanto mais clara e detalhada for sua descrição, mais precisa 
+            será a imagem gerada. Nosso sistema transforma sua imaginação em imagens únicas — tudo começa com 
+            a forma como você descreve.</p>
+        </section>
+        
+        <h2>Instruções</h2>
+        <ol>
+            <li>Descreva sua ideia</li>
+            <li>Escolha o estilo</li>
+            <li>Clique em "Gerar Imagem"</li>
+        </ol>
+        
+        <form action="#">
+            <label for="descricao">Descreva a imagem:</label>
+            <input type="text" name="descricao" id="descricao">
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="carregando" style="display: none;">
+            <p>Gerando imagem...</p>
+            <div class="feedback"></div>
+        </div>        
+    </main>
+
+    <footer>
+            <p class="footer">&copy; 2025 Gerador de Imagens AI</p>
+    </footer>
+</body>
+</html>
