@@ -54,16 +54,17 @@ document.addEventListener('DOMContentLoaded', function() {
           carregando.style.display = 'block'; 
           setTimeout(() => {
               carregando.style.display = 'none'; 
-              alert(`Imagem gerada para:`);
+              alert(`Imagem gerada`);
+              formulario.reset();
           }, 3000);
       }
   });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.querySelector('form');
+  const formulario = document.querySelector('form');
 
-  form.addEventListener('submit', function (e) {
+  formulario.addEventListener('submit', function (e) {
     const nome = document.getElementById('nome').value.trim();
     const email = document.getElementById('email').value.trim();
     const mensagem = document.getElementById('mensagem').value.trim();
@@ -73,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     } else{
       alert('Mensagem enviada.')
+      formulario.reset();
     }
   });
 });
